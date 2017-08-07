@@ -1,22 +1,20 @@
 <?php 
 
-class Clock{
+class Num_Clock{
 
-	public $hours;
-	public $min;
+	public $time;
 
 	function __construct(){
-
+		$this->time = date('h:i');
 	}
 
 	function __destruct(){
-		
+
 	}
 
 }
 
-
-sleep(300);
-
+$clock = new Num_Clock();
+echo $clock->time;
 
  ?>
